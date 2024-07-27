@@ -61,7 +61,7 @@ jobs:
         additionalArguments: --what-if
   deploy:
     runs-on: ubuntu-latest
-    environment: Website
+    environment: Website # 환경 이름
     needs: preview
     steps:
     - uses: actions/checkout@v3
